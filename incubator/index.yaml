@@ -1,0 +1,101 @@
+apiVersion: v1
+entries:
+  druid:
+  - apiVersion: v1
+    appVersion: 0.19.0
+    created: "2020-10-22T16:39:31.741562229Z"
+    dependencies:
+    - condition: zookeeper.enabled
+      name: zookeeper
+      repository: https://kubernetes-charts-incubator.storage.googleapis.com/
+      version: 2.1.4
+    - condition: mysql.enabled
+      name: mysql
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 1.6.4
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 8.6.4
+    description: Apache Druid is a high performance real-time analytics database.
+    digest: ce507c3dd984549f6bcb485841b12eda4720e1d3eb0787ef5696566156e1d321
+    home: https://druid.apache.org/
+    icon: https://druid.apache.org/img/favicon.png
+    keywords:
+    - olap
+    - database
+    - analytics
+    maintainers:
+    - email: maciek@brynski.pl
+      name: maver1ck
+    - email: hellis@foxmail.com
+      name: AWaterColorPen
+    - email: asdf2014@apache.org
+      name: asdf2014
+    name: druid
+    sources:
+    - https://github.com/apache/druid
+    urls:
+    - https://charts.helm.sh/stable/incubator/packages/druid-0.2.14.tgz
+    version: 0.2.14
+  kube-downscaler:
+  - apiVersion: v1
+    appVersion: 20.5.0
+    created: "2020-10-22T16:39:31.742091637Z"
+    description: A Helm chart for kube-downscaler
+    digest: c0fb40681bf73ef1b3f0d7584e49316541b9ee1ffa53b55209e803af852e82a2
+    home: https://github.com/hjacobs/kube-downscaler
+    keywords:
+    - k8s pods scheduler
+    - scheduled lifecycle
+    maintainers:
+    - email: c.tresarrieu@gmail.com
+      name: Rowern
+    name: kube-downscaler
+    sources:
+    - https://github.com/hjacobs/kube-downscaler
+    urls:
+    - https://charts.helm.sh/stable/incubator/packages/kube-downscaler-0.6.0.tgz
+    version: 0.6.0
+  rundeck:
+  - apiVersion: v1
+    appVersion: 3.2.7
+    created: "2020-10-22T16:39:31.743787165Z"
+    description: A Rundeck chart for Kubernetes
+    digest: 8f070a88645f61e2a0d461c6bdf6e13a4586d93b51276d3f609ae2b3c03cc233
+    home: https://github.com/rundeck/rundeck
+    keywords:
+    - rundeck
+    - jobs
+    - automation
+    - operations
+    maintainers:
+    - email: hello@dwardu.com
+      name: dwardu89
+    - email: fabioviana.bh@gmail.com
+      name: fabioviana
+    - email: diego.fl.duarte@gmail.com
+      name: dfduarte
+    name: rundeck
+    sources:
+    - https://github.com/rundeck/rundeck
+    urls:
+    - https://charts.helm.sh/stable/incubator/packages/rundeck-0.3.4.tgz
+    version: 0.3.4
+  sparkoperator:
+  - apiVersion: v1
+    appVersion: v1beta2-1.2.0-3.0.0
+    created: "2020-10-22T16:39:31.746288905Z"
+    description: A Helm chart for Spark on Kubernetes operator
+    digest: 86d00000b28e16a280570611d2f2dc9e15b39765fd511902d348d4640b626f2c
+    home: https://github.com/GoogleCloudPlatform/spark-on-k8s-operator
+    keywords:
+    - spark
+    maintainers:
+    - email: yuchaoran2011@gmail.com
+      name: yuchaoran2011
+    name: sparkoperator
+    urls:
+    - https://charts.helm.sh/stable/incubator/packages/sparkoperator-0.8.4.tgz
+    version: 0.8.4
+generated: "2020-10-22T16:39:31.734501714Z"
