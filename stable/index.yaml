@@ -1,0 +1,312 @@
+apiVersion: v1
+entries:
+  airflow:
+  - apiVersion: v1
+    appVersion: 1.10.12
+    created: "2020-10-22T16:39:25.311423971Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 8.6.4
+    - condition: redis.enabled
+      name: redis
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 10.5.7
+    description: Airflow is a platform to programmatically author, schedule and monitor
+      workflows
+    digest: 546610e6ae40bf7b892d3d67d0e6299ad45fbedf4c844bbd2a5ed11e36081f43
+    home: https://airflow.apache.org/
+    icon: https://airflow.apache.org/_images/pin_large.png
+    keywords:
+    - workflow
+    - dag
+    - airflow
+    maintainers:
+    - email: gaetan@xeberon.net
+      name: gsemet
+    - name: thesuperzapper
+    name: airflow
+    sources:
+    - https://airflow.apache.org/
+    urls:
+    - https://charts.helm.sh/stable/packages/airflow-7.13.0.tgz
+    version: 7.13.0
+  dex:
+  - apiVersion: v1
+    appVersion: 2.24.0
+    created: "2020-10-22T16:39:25.312961908Z"
+    description: OpenID Connect Identity (OIDC) and OAuth 2.0 Provider with Pluggable
+      Connectors
+    digest: b8b6249a7e74b9f50a6d75617a86467cbd896b93624639495754e3795b152456
+    home: https://github.com/dexidp/dex/
+    icon: https://github.com/dexidp/dex/raw/master/Documentation/logos/dex-glyph-color.png
+    keywords:
+    - dex
+    - oidc
+    maintainers:
+    - email: Kevin.Fox@pnnl.gov
+      name: kfox1111
+    - email: shane.starcher@gmail.com
+      name: sstarcher
+    - email: pete.brown@powerhrg.com
+      name: rendhalver
+    - email: vi7alya@gmail.com
+      name: vi7
+    name: dex
+    urls:
+    - https://charts.helm.sh/stable/packages/dex-2.15.0.tgz
+    version: 2.15.0
+  gangway:
+  - apiVersion: v1
+    appVersion: 3.3.0
+    created: "2020-10-22T16:39:25.314237038Z"
+    description: An application that can be used to easily enable authentication flows
+      via OIDC for a kubernetes cluster.
+    digest: f85ad34c60665e2fd350ce4e7a46b9cd7a87ed77c018b3d54da13bbb51db149e
+    home: https://github.com/heptiolabs/gangway
+    maintainers:
+    - email: robin@kearney.co.uk
+      name: rk295
+    name: gangway
+    sources:
+    - https://github.com/heptiolabs/gangway
+    urls:
+    - https://charts.helm.sh/stable/packages/gangway-0.4.3.tgz
+    version: 0.4.3
+  instana-agent:
+  - apiVersion: v1
+    appVersion: "1.1"
+    created: "2020-10-22T16:39:25.315921679Z"
+    description: Instana Agent for Kubernetes
+    digest: 20d95986867dfe091b54b95675ec640bafd988d3a3493915d7d3d4b1bc50bf4e
+    home: https://www.instana.com/
+    icon: https://instana-management-assets.s3-eu-west-1.amazonaws.com/stan-logo-2020.png
+    maintainers:
+    - email: jon.brisbin@instana.com
+      name: jbrisbin
+    - email: william.james@instana.com
+      name: wiggzz
+    - email: jeroen.soeters@instana.com
+      name: JeroenSoeters
+    - email: fabian.staeber@instana.com
+      name: fstab
+    - email: miel.donkers@instana.com
+      name: mdonkers
+    - email: dahlia.bock@instana.com
+      name: dlbock
+    - email: nathan.fisher@instana.com
+      name: nfisher
+    - email: michele.mancioppi@instana.com
+      name: mmanciop
+    name: instana-agent
+    sources:
+    - https://github.com/instana/instana-agent-docker
+    urls:
+    - https://charts.helm.sh/stable/packages/instana-agent-1.0.32.tgz
+    version: 1.0.32
+  karma:
+  - apiVersion: v1
+    appVersion: v0.72
+    created: "2020-10-22T16:39:25.316627696Z"
+    description: A Helm chart for Karma - an UI for Prometheus Alertmanager
+    digest: e9c185d0b0a79527e087e9e4d14079d8f0307f8e837e404ce40cd1ce7b1f16a8
+    home: https://github.com/prymitive/karma
+    maintainers:
+    - email: david@davidkarlsen.com
+      name: davidkarlsen
+    - email: l.mierzwa@gmail.com
+      name: prymitive
+    name: karma
+    sources:
+    - https://hub.docker.com/r/lmierzwa/karma/
+    - https://github.com/prymitive/karma
+    urls:
+    - https://charts.helm.sh/stable/packages/karma-1.7.0.tgz
+    version: 1.7.0
+  kuberhealthy:
+  - apiVersion: v1
+    appVersion: v1.0.2
+    created: "2020-10-22T16:39:25.31722971Z"
+    deprecated: true
+    description: DEPRECATED. Please use https://comcast.github.io/kuberhealthy/ instead.
+    digest: 71653f2a691875fbeaa9f2b9e4ece7ca6544ba1dcc449793b4d2ecd8e5f8643d
+    home: https://comcast.github.io/kuberhealthy/
+    icon: https://raw.githubusercontent.com/Comcast/kuberhealthy/helm/deploy/helm/kuberhealthy/kh-logo.png
+    keywords:
+    - kuberhealthy
+    - kubernetes
+    - monitoring
+    - synthetic
+    - comcast
+    - health
+    - cluster
+    - prometheus
+    name: kuberhealthy
+    sources:
+    - https://github.com/Comcast/kuberhealthy
+    - https://github.com/helm/charts/tree/master/stable/kuberhealthy
+    urls:
+    - https://charts.helm.sh/stable/packages/kuberhealthy-1.2.7.tgz
+    version: 1.2.7
+  metabase:
+  - apiVersion: v1
+    appVersion: v0.36.3
+    created: "2020-10-22T16:39:25.31807333Z"
+    description: The easy, open source way for everyone in your company to ask questions
+      and learn from data.
+    digest: 1e6cc5be4a28ab3a99c32b32d9e9b48f2603060837aeeb0c362b3d19788b0c92
+    home: http://www.metabase.com/
+    icon: http://www.metabase.com/images/logo.svg
+    maintainers:
+    - email: phamminhthanh69@gmail.com
+      name: pmint93
+    name: metabase
+    sources:
+    - https://github.com/metabase/metabase
+    urls:
+    - https://charts.helm.sh/stable/packages/metabase-0.13.0.tgz
+    version: 0.13.0
+  percona-xtradb-cluster:
+  - apiVersion: v1
+    appVersion: 5.7.19
+    created: "2020-10-22T16:39:25.319211757Z"
+    description: free, fully compatible, enhanced, open source drop-in replacement
+      for MySQL with Galera Replication (xtradb)
+    digest: 3616783afb5cc9c45e901e0611048aeb7f6bcb2c70cf527d2950f4e11274584a
+    home: https://www.percona.com/
+    icon: https://www.percona.com/sites/all/themes/percona2015/logo.png
+    keywords:
+    - mysql
+    - percona
+    - database
+    - sql
+    - xtradb
+    - galera
+    - wsrep
+    maintainers:
+    - email: username.taken@gmail.com
+      name: paulczar
+    name: percona-xtradb-cluster
+    sources:
+    - https://github.com/kubernetes/charts
+    - https://github.com/percona-lab/percona-docker/
+    urls:
+    - https://charts.helm.sh/stable/packages/percona-xtradb-cluster-1.0.6.tgz
+    version: 1.0.6
+  selenium:
+  - apiVersion: v1
+    appVersion: 3.141.59
+    created: "2020-10-22T16:39:25.320750094Z"
+    description: Chart for selenium grid
+    digest: 20c07b79bd4eaa010eb941dd527ac3ddedf92e7b6e748f2beac845761efae4aa
+    home: http://www.seleniumhq.org/
+    icon: http://docs.seleniumhq.org/images/big-logo.png
+    keywords:
+    - qa
+    maintainers:
+    - email: techops@adaptly.com
+      name: flah00
+    - email: diemol@gmail.com
+      name: diemol
+    - email: ekirmayer@hotmail.com
+      name: ekirmayer
+    name: selenium
+    sources:
+    - https://github.com/SeleniumHQ/docker-selenium
+    urls:
+    - https://charts.helm.sh/stable/packages/selenium-1.2.1.tgz
+    version: 1.2.1
+  spark-history-server:
+  - apiVersion: v1
+    appVersion: 2.4.0
+    created: "2020-10-22T16:39:25.323146051Z"
+    description: A Helm chart for Spark History Server
+    digest: fd0d212b3fa5a9d5b6775dcf42298654d51186bb9d2c0f69bc667af897d449f7
+    home: https://spark.apache.org
+    keywords:
+    - spark
+    - history-server
+    maintainers:
+    - email: yuchaoran2011@gmail.com
+      name: yuchaoran2011
+    name: spark-history-server
+    sources:
+    - https://github.com/apache/spark
+    - https://github.com/lightbend/spark-history-server-docker
+    urls:
+    - https://charts.helm.sh/stable/packages/spark-history-server-1.4.0.tgz
+    version: 1.4.0
+  stolon:
+  - apiVersion: v1
+    appVersion: 0.16.0
+    created: "2020-10-22T16:39:25.32557301Z"
+    description: Stolon - PostgreSQL cloud native High Availability.
+    digest: 1b3302e5997c664e661f38968fecadae8ffabe6aa54a6855db9b0af734b7a0d1
+    home: https://github.com/sorintlab/stolon
+    icon: https://i.imgur.com/tIW8sAW.png
+    maintainers:
+    - email: rluckie@cisco.com
+      name: rtluckie
+    - email: ipaq.lw@gmail.com
+      name: lwolf
+    name: stolon
+    sources:
+    - https://github.com/sorintlab/stolon
+    - https://github.com/lwolf/stolon-chart
+    urls:
+    - https://charts.helm.sh/stable/packages/stolon-1.6.3.tgz
+    version: 1.6.3
+  traefik:
+  - apiVersion: v1
+    appVersion: 1.7.24
+    created: "2020-10-22T16:39:25.328326675Z"
+    description: A Traefik based Kubernetes ingress controller with Let's Encrypt
+      support
+    digest: 2901a6f0f19d69011e6898922ee02ea63e37d8af8c05a4e4102bc7f0f3726854
+    home: https://traefik.io/
+    icon: https://docs.traefik.io/assets/img/traefik.logo.png
+    keywords:
+    - traefik
+    - ingress
+    - acme
+    - letsencrypt
+    maintainers:
+    - email: kent.rancourt@microsoft.com
+      name: krancour
+    - email: emile@vauge.com
+      name: emilevauge
+    - email: daniel.tomcej@gmail.com
+      name: dtomcej
+    - email: ludovic@containo.us
+      name: ldez
+    name: traefik
+    sources:
+    - https://github.com/containous/traefik
+    - https://github.com/helm/charts/tree/master/stable/traefik
+    urls:
+    - https://charts.helm.sh/stable/packages/traefik-1.87.3.tgz
+    version: 1.87.3
+  vsphere-cpi:
+  - apiVersion: v1
+    appVersion: 1.2.1
+    created: "2020-10-22T16:39:25.329239497Z"
+    description: A Helm chart for vSphere Cloud Provider Interface Manager (CPI)
+    digest: 8fc65ba7db4e8da9b6d57bef62110fe7b3c10b6509ef281541c43c9b8c6f0a49
+    home: https://github.com/kubernetes/cloud-provider-vsphere
+    icon: https://raw.githubusercontent.com/kubernetes/cloud-provider-vsphere/master/docs/vmware_logo.png
+    keywords:
+    - vsphere
+    - vmware
+    - cloud
+    - provider
+    maintainers:
+    - email: vonthenend@vmware.com
+      name: dvonthenen
+    name: vsphere-cpi
+    sources:
+    - https://github.com/kubernetes/cloud-provider-vsphere
+    urls:
+    - https://charts.helm.sh/stable/packages/vsphere-cpi-0.2.1.tgz
+    version: 0.2.1
+generated: "2020-10-22T16:39:25.271972627Z"
